@@ -21,7 +21,7 @@ public class Main extends Application {
 
         UtilsViews.parentContainer.setStyle("-fx-font: 14 arial;");
         UtilsViews.addView(getClass(), "Disconnected", "/assets/layoutDisconnected.fxml");
-        UtilsViews.addView(getClass(), "Connecting", "/assets/layoutConnecting.fxml");
+        Utils.addView(getClass(), "Connecting", "/assets/layoutConnecting.fxml");
         UtilsViews.addView(getClass(), "Disconnecting", "/assets/layoutDisconnecting.fxml");
         UtilsViews.addView(getClass(), "Connected", "/assets/layoutConnected.fxml");
 
