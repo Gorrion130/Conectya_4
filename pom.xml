@@ -38,6 +38,12 @@
       <scope>test</scope>
     </dependency>  </dependencies>
 
+  <dependency>
+    <groupId>org.java-websocket</groupId>
+    <artifactId>Java-WebSocket</artifactId>
+    <version>1.5.4</version>
+  </dependency>
+
   <build>
     <plugins>
       <plugin>
