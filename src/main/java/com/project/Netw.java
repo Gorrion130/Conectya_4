@@ -10,6 +10,8 @@ import org.java_websocket.handshake.ServerHandshake;
 
 public class Netw extends WebSocketClient {
 
+	private String lastMessage;
+
 	public Netw(URI serverUri, Draft draft) {
 		super(serverUri, draft);
 	}
@@ -18,14 +20,15 @@ public class Netw extends WebSocketClient {
 		super(serverURI);
 	}
 
+	public String getLastMessage() {
+		return lastMessage;
+		
+	}
+
 	@Override
 	public void onOpen(ServerHandshake handshakedata) {
 		send("hello");
 	}
-
-    public void sendMessage(String message){
-        send(message);
-    }
 
 	@Override
 	public void onClose(int code, String reason, boolean remote) {
@@ -35,6 +38,7 @@ public class Netw extends WebSocketClient {
 	@Override
 	public void onMessage(String message) {
 		System.out.println("received message: " + message);
+		lastMessage = message;
 	}
 
 	@Override
