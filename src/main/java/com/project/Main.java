@@ -2,7 +2,6 @@ package com.project;
 
 import javafx.application.Application;
 import javafx.scene.Scene;
-import javafx.scene.image.Image;
 import javafx.stage.Stage;
 
 public class Main extends Application {
@@ -16,7 +15,7 @@ public class Main extends Application {
 
         final int windowWidth = 800;
         final int windowHeight = 600;
-
+        
         UtilsViews.parentContainer.setStyle("-fx-font: 14 arial;");
         UtilsViews.addView(getClass(), "Disconnected", "/assets/layoutDisconnected.fxml");
         //UtilsViews.addView(getClass(), "Connecting", "/assets/layoutConnecting.fxml");

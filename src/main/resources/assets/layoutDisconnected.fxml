@@ -7,27 +7,33 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane fx:id="refAnchorPane" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.project.CtrlLayoutDisconnected">
+<AnchorPane fx:id="refAnchorPane" prefHeight="370.0" prefWidth="564.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.project.CtrlLayoutDisconnected">
    <children>
       <AnchorPane prefHeight="55.0" style="-fx-background-color: #95c3ff;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
          <children>
-            <Label alignment="CENTER" layoutY="15.0" text="WS Client" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+            <Label alignment="CENTER" layoutY="15.0" text="MEMORY" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
                <font>
                   <Font size="24.0" />
                </font>
             </Label>
          </children>
       </AnchorPane>
-    <VBox alignment="CENTER" layoutX="320.0" layoutY="143.0" spacing="10.0">
-        <Label style="-fx-font-size: 16; -fx-font-weight: 200;" text="Server IP" />
+    <VBox alignment="CENTER" layoutX="207.0" layoutY="91.0" spacing="10.0">
+        <Label style="-fx-font-size: 16; -fx-font-weight: 200;" text="Servidor:" />
         <TextField fx:id="ipTextField" maxWidth="200.0" />
     </VBox>
 
-    <VBox alignment="CENTER" layoutX="320.0" layoutY="216.0" spacing="10.0">
-        <Label style="-fx-font-size: 16; -fx-font-weight: 200;" text="Server port" />
+    <VBox alignment="CENTER" layoutX="207.0" layoutY="153.0" spacing="10.0">
+        <Label style="-fx-font-size: 16; -fx-font-weight: 200;" text="Port:" />
         <TextField fx:id="portTextField" maxWidth="200.0" />
     </VBox>
+      <VBox alignment="CENTER" layoutX="207.0" layoutY="217.0" spacing="10.0">
+         <children>
+            <Label style="-fx-font-size: 16; -fx-font-weight: 200;" text="Nom del jugador:" />
+            <TextField fx:id="portTextField1" maxWidth="200.0" />
+         </children>
+      </VBox>
 
-    <Button layoutX="352.0" layoutY="307.0" minHeight="32.0" minWidth="96.0" onAction="#connectToServer" style="-fx-font-size: 14;" text="Connect" />
+    <Button layoutX="234.0" layoutY="304.0" minHeight="32.0" minWidth="96.0" onAction="#connectToServer" style="-fx-font-size: 14;" text="Connect" />
    </children>
 </AnchorPane>
