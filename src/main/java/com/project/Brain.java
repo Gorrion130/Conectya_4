@@ -3,13 +3,11 @@ package com.project;
 import java.net.URI;
 import java.net.URISyntaxException;
 
-import org.java_websocket.client.WebSocketClient;
-
 public class Brain {
 
     private Netw client;
 
-    public void brain(String ip, Integer port) {
+    public Brain(String ip, int port) {
         
         try {
             client = new Netw(new URI("ws://"+ip+":"+Integer.toString(port)));
