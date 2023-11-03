@@ -1,5 +1,16 @@
 package com.project;
 
+import com.project.Babel;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Babel babel = new Babel();
+        babel.connect("127.0.0.1",1337);
+    }
+}
+
+/*
 import javafx.application.Application;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
@@ -38,4 +49,5 @@ public class Main extends Application {
         System.exit(1); // Kill all executor services
     }
     */
-}
+
+//}

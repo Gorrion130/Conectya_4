@@ -7,10 +7,16 @@ public class Brain {
 
     private Netw client;
 
-    public Brain(String ip, int port) {
+    public Brain(String ip, int port) throws InterruptedException {
         
         try {
             client = new Netw(new URI("ws://"+ip+":"+Integer.toString(port)));
+            try {
+                client.connectBlocking();
+            } catch (InterruptedException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
         } catch (URISyntaxException e) {
             // TODO Auto-generated catch block
             e.printStackTrace();
